@@ -7,6 +7,7 @@
     <title>Blog</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel="stylesheet" href="../css/Responsive.css">
    
     <script src='main.js'></script>
 </head>
@@ -63,7 +64,7 @@
                     <div class="header_menu">
                         <div class="logo_part">
                             <a href="#"> <img src="../images/logo.jpg" alt=""></a>
-                            <a href="#">
+                            <a href="#" class="h2-menu">
                                 <h2>Investor</h2>
                             </a>
                         </div>
@@ -616,6 +617,16 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+    <script>
+        function open_menu() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function close_menu() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    
     </script>
 </body>
 
